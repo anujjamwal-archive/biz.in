@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Tenant.where(domain: 'localhost').first_or_create
+Tenant.where(domain: 'samsung-123.biz.in').first_or_create
